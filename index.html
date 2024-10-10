@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Web Developer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            margin-bottom: 10px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .projects a, .social-media a {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .projects a:hover, .social-media a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- "mb-4" stands for "margin bottom" with a size of 1.5rem -->
+        <!-- "rem" means, that the proportions aligns with the size of the global font size -->
+        <div class="profile text-center mb-4">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture of John Doe">
+            <h1>John Doe</h1>
+        </div>
+        <div class="about-me mb-4">
+            <h2>About Me</h2>
+            <p class="lead">Hi, I'm John Doe, a passionate web developer with experience in creating dynamic and responsive websites.</p>
+        </div>
+        <div class="skills mb-4">
+            <h2>Skills</h2>
+            <div class="row">
+                <!-- "col-6" for small sized devices takes 6 columns in the 12 columns grid -->
+                <!-- "col-md-6" for middle sized devices takes 4 columns in the 12 columns grid -->
+                <div class="col-6 col-md-4 mb-2">HTML</div>
+                <div class="col-6 col-md-4 mb-2">CSS</div>
+                <div class="col-6 col-md-4 mb-2">JavaScript</div>
+                <div class="col-6 col-md-4 mb-2">React</div>
+                <div class="col-6 col-md-4 mb-2">Node.js</div>
+            </div>
+        </div>
+        <div class="projects mb-4">
+            <h2>Projects</h2>
+            <!-- "d-flex" simply stands for the CSS property "display: flex" -->
+            <div class="d-flex">
+                <!-- "mr-2" stands for "margin right" with a size of 0.5rem -->
+                <a href="https://github.com/twbs/bootstrap" target="_blank" class="btn btn-primary col-6 col-md-4 mr-2">
+                    <i class="fab fa-bootstrap"></i> Bootstrap
+                </a>
+                <a href="https://github.com/facebook/react" target="_blank" class="btn btn-primary col-6 col-md-4 mr-2">
+                    <i class="fab fa-react"></i> React
+                </a>
+                <a href="https://github.com/nodejs/node" target="_blank" class="btn btn-primary col-6 col-md-4">
+                    <i class="fab fa-node-js"></i> Node.js
+                </a>
+            </div>
+        </div>
+        <div class="social-media">
+            <h2>Social Media</h2>
+            <div class="d-flex">
+                <a href="https://twitter.com/johndoe" target="_blank" class="btn btn-primary col-6 col-md-4 mr-2">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://linkedin.com/in/johndoe" target="_blank" class="btn btn-primary col-6 col-md-4 mr-2">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/johndoe" target="_blank" class="btn btn-primary col-6 col-md-4">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
